@@ -1,0 +1,601 @@
+* {
+  font-family: Helvetica;
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 500px;
+  background-color: #f1f3ff;
+}
+
+.offcanvas-header {
+  position: absolute;
+  top: 10px;
+}
+
+.logo {
+  width: 100px;
+  height: 34px;
+  background-color: #0d28a6;
+}
+
+.navbar-nav {
+  margin-left: 45%;
+}
+
+.nav-item {
+  font-weight: 600;
+}
+
+.navbar-collapse {
+  margin-top: 5px;
+}
+
+.navbar .btn-success {
+  position: absolute;
+  left: 83%;
+  top: 20%;
+}
+
+.judul-hero {
+  margin-top: 100px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.description-hero {
+  width: 468px;
+  height: 60px;
+  font-size: 14px;
+}
+
+.btn-success {
+  background: #5cb85f;
+  border-radius: 2px;
+}
+
+.img-hero {
+  top: 97px;
+}
+
+.bg-color {
+  background-color: #0d28a6;
+  width: 747px;
+  height: 240px;
+  top: 260px;
+  border-top-left-radius: 100px;
+}
+/* Hero */
+
+/* Service */
+.service {
+  margin-top: 100px;
+}
+
+.img-service {
+  width: 459px;
+  height: 428px;
+}
+
+.service-word {
+  width: 468px;
+  height: 72px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 30px;
+}
+
+.service-description {
+  width: 468px;
+  height: 60px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 30px;
+}
+
+.list-service {
+  margin-left: 5%;
+}
+
+.img-check {
+  margin-right: 10px;
+}
+
+/* Service */
+
+/* Why Us */
+.why-us {
+  height: 308px;
+  top: 1132px;
+  left: 136px;
+  right: 136px;
+}
+
+.list-us {
+  margin-inline: 16px;
+  width: 268px;
+  height: 196px;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.sub-judul {
+  width: 150px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.deskripsi-why-us {
+  width: 220px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* Why Us */
+
+/* Testimonial */
+.testimonial {
+  display: flex;
+  position: absolute;
+  top: 1540px;
+  width: 1516px;
+  column-gap: 20px;
+}
+
+.profile-img {
+  padding-left: 110px;
+  width: 80px;
+  height: 80px;
+  margin-top: 95px;
+}
+
+.profile-desc {
+  padding-right: 30px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.item {
+  width: 619px;
+  height: 270px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: #f1f3ff;
+}
+
+.rate {
+  width: 80px;
+  height: 16px;
+  padding-right: 310px;
+  margin-top: 69px;
+}
+
+.text-testi {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.testi .h6 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.owl-carousel .h6 {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Testimonial */
+
+/* Banner */
+.banner {
+  width: 1246px;
+  height: 326px;
+  right: 136px;
+  top: 2078px;
+  background-color: #0d28a6;
+  padding: 70px;
+}
+
+.banner-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.banner-desc {
+  width: 50%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 25%;
+}
+
+.banner .btn-success {
+  margin-top: 5%;
+}
+/* Banner */
+
+/* FAQ */
+.faq {
+  margin-top: 1500px;
+  height: 500px;
+}
+
+.faq .h1 {
+  padding-left: 5%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.faq .lead {
+  padding-left: 5%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.accordion {
+  display: grid;
+  padding-right: 5%;
+  row-gap: 3%;
+  border: none;
+}
+
+.accordion-item {
+  border-radius: 0%;
+}
+
+.accordion-header {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.accordion-body {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* FAQ */
+
+/* Footer */
+.footer-1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+
+.footer-2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* Footer */
+
+/* Media Query Phone Size */
+@media (max-width: 768px) {
+  /* Hero */
+  .hero {
+    height: 657px;
+  }
+
+  .offcanvas-header .btn-close {
+    margin-right: 5%;
+  }
+
+  .navbar-nav {
+    margin-left: 8px;
+    margin-top: 60px;
+  }
+
+  .navbar .btn-success {
+    left: 8px;
+    top: 26%;
+  }
+
+  .offcanvas {
+    max-width: 50%;
+    align-items: flex-start;
+    font-weight: 600;
+  }
+
+  .offcanvas-header {
+    font-weight: 700;
+  }
+
+  .judul-hero {
+    width: 328px;
+    height: 216px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 20px;
+  }
+
+  .description-hero {
+    width: 328px;
+    height: 75px;
+  }
+
+  .img-hero {
+    width: 344.22px;
+    height: 199px;
+    left: 0px;
+    top: 458px;
+  }
+
+  .bg-color {
+    padding-left: 10px;
+    left: 10px;
+    top: 525px;
+    height: 130px;
+    width: 100%;
+    border-top-left-radius: 80px;
+  }
+  /* Hero */
+
+  /* Service */
+  .service {
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  .img-service {
+    width: 252px;
+    height: 228px;
+    left: 15%;
+  }
+
+  .service-word {
+    width: 360px;
+    margin-left: 0px;
+  }
+
+  .service-description {
+    width: 360px;
+    margin-left: 0px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .list-service {
+    width: 360px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .list-service .nav-item {
+    margin-left: 0px;
+  }
+
+  .service-list {
+    position: absolute;
+    left: 0px;
+    top: 969px;
+  }
+  /* Service */
+
+  /* Why Us */
+  .why-us {
+    width: 340px;
+    left: 0px;
+  }
+  .judul-why-us {
+    position: absolute;
+    height: 36px;
+    top: 300px;
+    text-align: center;
+    left: 10%;
+  }
+
+  .why-us-description {
+    position: absolute;
+    width: 328px;
+    height: 20px;
+    text-align: center;
+    top: 330px;
+    left: 10%;
+  }
+
+  .list-us {
+    margin-top: 15px;
+  }
+
+  .list-item {
+    position: absolute;
+    top: 350px;
+    left: 13%;
+  }
+  /* Why Us */
+
+  /* Testimonial */
+  .testimonial {
+    position: absolute;
+    margin-top: 900px;
+    width: 360px;
+    height: 372px;
+    left: 16px;
+  }
+
+  .item {
+    width: 360px;
+    height: 372px;
+    left: 16px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    padding-left: 20px;
+    margin-left: 110px;
+    margin-top: 30px;
+  }
+
+  .rate {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 250px;
+    left: 130px;
+    width: 80px;
+    height: 16px;
+    top: 50px;
+  }
+
+  .profile-desc {
+    position: absolute;
+    left: 50px;
+    top: 130px;
+    text-align: center;
+    width: 264px;
+    height: 120px;
+  }
+
+  .item .h6 {
+    position: absolute;
+    top: 80%;
+    left: 100px;
+  }
+  /* Testimonial */
+
+  /* Banner */
+  .banner {
+    position: absolute;
+    width: 328px;
+    height: 400px;
+    left: 8%;
+    top: 2953px;
+  }
+
+  .banner-text {
+    height: 108px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .banner-desc {
+    margin-left: 0;
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .banner .btn-success {
+    margin-top: 5%;
+  }
+  /* Banner */
+
+  /* FAQ */
+  .faq .h1 {
+    position: absolute;
+    left: 4.44%;
+    right: 4.44%;
+    top: 3400px;
+  }
+
+  .faq .lead {
+    position: absolute;
+    top: 3450px;
+  }
+
+  .accordion {
+    position: absolute;
+    left: 4.44%;
+    right: 4.44%;
+    margin-bottom: 50px;
+    width: 380px;
+    top: 3509px;
+  }
+  /* FAQ */
+
+  /* Footer */
+  .footer-1 {
+    position: absolute;
+    top: 4100px;
+    width: 268px;
+    left: 0;
+  }
+
+  .footer-2 {
+    position: absolute;
+    width: 268px;
+    top: 4250px;
+    left: -2%;
+    font-weight: 600;
+  }
+
+  .footer-2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+
+  .footer-3 {
+    position: absolute;
+    width: 360px;
+    height: 68px;
+    left: 0;
+    top: 4400px;
+  }
+
+  .footer-4 {
+    position: absolute;
+    width: 268px;
+    height: 150px;
+    left: 0;
+    top: 4480px;
+  }
+  /* Footer */
+}
