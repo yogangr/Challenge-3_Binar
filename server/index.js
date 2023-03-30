@@ -1,14 +1,11 @@
 const http = require("http");
-const { PORT = 8000 } = process.env; // Ambil port dari environment variable
+const { PORT = 8000 } = process.env;
 
 const fs = require("fs");
 const path = require("path");
-// const mime = require("mime");
 
 const cars = require("../data/cars.min.json");
 
-// Request handler
-// Fungsi yang berjalan ketika ada request yang masuk.
 function onRequest(req, res) {
   if (req.url === "/") {
     fs.readFile("./public/index.html", "UTF-8", function (err, html) {
@@ -26,7 +23,6 @@ function onRequest(req, res) {
     res.writeHead(200, { "Content-Type": "application/json" });
     fileStream.pipe(res);
   } else if (req.url.match(".css$")) {
-    //  console.log('masuk sini====css===');
     const cssPath = path.join(__dirname, "../public", req.url);
     const fileStream = fs.createReadStream(cssPath, "UTF-8");
     res.writeHead(200, { "Content-Type": "text/css" });
@@ -42,7 +38,6 @@ function onRequest(req, res) {
     res.writeHead(200, { "Content-Type": "image/jpg" });
     fileStream.pipe(res);
   } else if (req.url.match(".js$")) {
-    //  console.log('masuk sini===js====');
     const jsPath = path.join(__dirname, "../public", req.url);
     const fileStream = fs.createReadStream(jsPath);
     res.writeHead(200, { "Content-Type": "application/javascript" });
@@ -62,7 +57,6 @@ function onRequest(req, res) {
 
 const server = http.createServer(onRequest);
 
-// Jalankan server
 server.listen(PORT, "0.0.0.0", () => {
   console.log("Server sudah berjalan, silahkan buka http://localhost:%d", PORT);
 });
