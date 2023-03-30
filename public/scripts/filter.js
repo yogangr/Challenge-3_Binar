@@ -20,29 +20,33 @@ class Car {
       alert("Please select a driver");
       return;
     } else if (dateTime < getDateTimeNow()) {
-      alert("Harap pilih tanggal dan waktu yang lebih dari saat ini");
+      document.getElementById("notMatch").innerHTML = `
+        <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
+        Waktu yang anda pilih sudah terlewat, harap pilih tanggal dan waktu yang akan datang!
+        </div>
+        `;
       return;
     } else if (passanger == "" && driver.toString() == "true") {
       return this.cars.filter(
-        (car) => car.available === true && car.availableAt >= dateTime
+        (car) => car.available === true && car.availableAt <= dateTime
       );
     } else if (passanger != "" && driver.toString() == "true") {
       return this.cars.filter(
         (car) =>
           car.available === true &&
           car.capacity >= passanger &&
-          car.availableAt >= dateTime
+          car.availableAt <= dateTime
       );
     } else if (passanger == "" && driver.toString() == "false") {
       return this.cars.filter(
-        (car) => car.available === false && car.availableAt >= dateTime
+        (car) => car.available === false && car.availableAt <= dateTime
       );
     } else if (passanger != "" && driver.toString() == "false") {
       return this.cars.filter(
         (car) =>
           car.available === false &&
           car.capacity >= passanger &&
-          car.availableAt >= dateTime
+          car.availableAt <= dateTime
       );
     }
   }
@@ -150,7 +154,11 @@ function getCars() {
     }
     app.innerHTML = htmlData;
     if (htmlData == "") {
-      alert("No car available");
+      document.getElementById("notMatch").innerHTML = `
+        <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
+        Mobil Tidak Tersedia!
+        </div>
+        `;
     }
   }
 }

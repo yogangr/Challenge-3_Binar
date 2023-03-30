@@ -128,9 +128,6 @@
   box-shadow: none;
 }
 
-/* .show {
-    display: block;
-  } */
 .button-search {
   width: 13%;
   background: #5cb85f;
@@ -168,6 +165,10 @@
   flex-flow: wrap;
   text-align: left;
   color: black;
+}
+
+#notMatch {
+  margin-top: 80px;
 }
 
 /* end search */
