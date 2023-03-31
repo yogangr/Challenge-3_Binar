@@ -17,7 +17,32 @@ class Car {
     let passanger = document.getElementById("passanger").value;
 
     if (driver === undefined || driver === "") {
-      alert("Please select a driver");
+      document.getElementById("notMatch").innerHTML = `
+        <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
+        Pilih Tipe Driver!
+        </div>
+        `;
+      return;
+    } else if (date === undefined || date === "") {
+      document.getElementById("notMatch").innerHTML = `
+        <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
+        Pilih Tanggal!
+        </div>
+        `;
+      return;
+    } else if (time === undefined || time === "") {
+      document.getElementById("notMatch").innerHTML = `
+        <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
+        Pilih Waktu Jemput/Ambil!
+        </div>
+        `;
+      return;
+    } else if (passanger === undefined || passanger === "") {
+      document.getElementById("notMatch").innerHTML = `
+        <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
+        Tentukan Jumlah Penumpang!
+        </div>
+        `;
       return;
     } else if (dateTime < getDateTimeNow()) {
       document.getElementById("notMatch").innerHTML = `
@@ -54,7 +79,7 @@ class Car {
 
 let xmlHttp = new XMLHttpRequest();
 xmlHttp.open("GET", "http://localhost:8000/api/cars", false);
-xmlHttp.send(null); // Request body null
+xmlHttp.send(null);
 
 let data = JSON.parse(xmlHttp.responseText);
 
