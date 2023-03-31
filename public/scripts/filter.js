@@ -37,13 +37,6 @@ class Car {
         </div>
         `;
       return;
-    } else if (passanger === undefined || passanger === "") {
-      document.getElementById("notMatch").innerHTML = `
-        <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
-        Tentukan Jumlah Penumpang!
-        </div>
-        `;
-      return;
     } else if (dateTime < getDateTimeNow()) {
       document.getElementById("notMatch").innerHTML = `
         <div class="alert alert-danger " style="padding: 10px 10px 10px 10px; margin-left: auto; margin-right: auto; margin-top: -80px; width: 50%;" role="alert">
