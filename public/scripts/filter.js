@@ -141,7 +141,7 @@ function getCars() {
                               <i class="bi bi-people" aria-hidden="true" style="font-size:24px;"></i>
                           </div> 
                           <p style="font-family: 'Helvetica'; font-style: normal; font-weight: 300; font-size: 14px; line-height: 26px;">
-                          Kapasitas : ${car.capacity} Orang
+                          ${car.capacity} Orang
                           </p>
                       </div>
                       <div style="display: flex; ">
@@ -149,7 +149,7 @@ function getCars() {
                               <i class="bi bi-gear" aria-hidden="true" style="font-size:20px;"></i>
                           </div> 
                           <p style="font-family: 'Helvetica'; font-style: normal; font-weight: 300; font-size: 14px; line-height: 26px;">
-                          Transmisi : ${car.transmission}
+                          ${car.transmission}
                           </p>
                       </div>
                       <div style="display: flex;">

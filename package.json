@@ -8,5 +8,8 @@
   "private": false,
   "scripts": {
     "start": "node server/index.js"
+  },
+  "dependencies": {
+    "feather-icons": "^4.29.0"
   }
 }
